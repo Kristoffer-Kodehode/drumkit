@@ -131,9 +131,9 @@ drum2.addEventListener("click", () => {
   hiHatSound.play();
 });
 
-drum2.addEventListener("dblclick", () => {
+/*drum2.addEventListener("dblclick", () => {
   openHatSound.play();
-});
+});*/
 
 drum3.addEventListener("click", () => {
   tomSound.play();
@@ -147,9 +147,9 @@ drum5.addEventListener("click", () => {
   hiHat2Sound.play();
 });
 
-drum5.addEventListener("dblclick", () => {
+/*drum5.addEventListener("dblclick", () => {
   openHat2Sound.play();
-});
+});*/
 
 drum6.addEventListener("click", () => {
   ride2Sound.play();
