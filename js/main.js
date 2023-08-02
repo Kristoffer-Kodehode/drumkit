@@ -1,13 +1,13 @@
 const drum1 = document.querySelector("#sound-btn1");
 const drum2 = document.querySelector("#sound-btn2");
-const drum3 = document.querySelector("#sound-btn2");
-const drum4 = document.querySelector("#sound-btn3");
-const drum5 = document.querySelector("#sound-btn4");
-const drum6 = document.querySelector("#sound-btn5");
-const drum7 = document.querySelector("#sound-btn6");
-const drum8 = document.querySelector("#sound-btn7");
-const drum9 = document.querySelector("#sound-btn8");
-const drum10 = document.querySelector("#sound-btn9");
+const drum3 = document.querySelector("#sound-btn3");
+const drum4 = document.querySelector("#sound-btn4");
+const drum5 = document.querySelector("#sound-btn5");
+const drum6 = document.querySelector("#sound-btn6");
+const drum7 = document.querySelector("#sound-btn7");
+const drum8 = document.querySelector("#sound-btn8");
+const drum9 = document.querySelector("#sound-btn9");
+const drum10 = document.querySelector("#sound-btn10");
 const drum11 = document.querySelector("#sound-btn11");
 const drum12 = document.querySelector("#sound-btn12");
 const drum13 = document.querySelector("#sound-btn13");
@@ -16,7 +16,6 @@ const drum15 = document.querySelector("#sound-btn15");
 const drum16 = document.querySelector("#sound-btn16");
 
 const clapSound = new Audio("sound/clap.wav");
-
 const hiHatSound = new Audio("sound/hiHat.wav");
 const hiHat2Sound = new Audio("sound/hiHat2.wav");
 const kickSound = new Audio("sound/kick.wav");
@@ -30,7 +29,6 @@ const ride2Sound = new Audio("sound/ride2.wav");
 const snareSound = new Audio("sound/snare.wav");
 const snare2Sound = new Audio("sound/snare2.wav");
 const snare3Sound = new Audio("sound/snare3.wav");
-const tinkSound = new Audio("sound/tink.wav");
 const tomSound = new Audio("sound/tom.wav");
 const tom2Sound = new Audio("sound/tom2.wav");
 const tom3Sound = new Audio("sound/tom3.wav");
@@ -123,39 +121,6 @@ window.addEventListener("keydown", (e) => {
       clapSound.play();
     }
   }
-  /*if (e.key === "e") {
-    clapSound.play();
-  } else if ((e.key = "r")) {
-    testSound.play();
-  } else if ((e.key = "t")) {
-    hiHat2Sound.play();
-  } else if ((e.key = "y")) {
-    tomSound.play();
-  } else if ((e.key = "u")) {
-    tomSound.play();
-  } else if ((e.key = "i")) {
-    tomSound.play();
-  } else if ((e.key = "d")) {
-    tomSound.play();
-  } else if ((e.key = "f")) {
-    tomSound.play();
-  } else if ((e.key = "g")) {
-    tomSound.play();
-  } else if ((e.key = "h")) {
-    tomSound.play();
-  } else if ((e.key = "j")) {
-    snareSound.play();
-  } else if ((e.key = "k")) {
-    tomSound.play();
-  } else if ((e.key = "c")) {
-    kickSound.play();
-  } else if ((e.key = "v")) {
-    kick2Sound.play();
-  } else if ((e.key = "b")) {
-    kick3Sound.play();
-  } else if ((e.key = "n")) {
-    kick4Sound.play();
-  }*/
 });
 
 drum1.addEventListener("click", () => {
@@ -191,27 +156,27 @@ drum6.addEventListener("click", () => {
 });
 
 drum7.addEventListener("click", () => {
-  hiHatSound.play();
+  tom3Sound.play();
 });
 
 drum8.addEventListener("click", () => {
-  hiHatSound.play();
+  tom4Sound.play();
 });
 
 drum9.addEventListener("click", () => {
-  hiHatSound.play();
+  snareSound.play();
 });
 
 drum10.addEventListener("click", () => {
-  hiHatSound.play();
+  snare2Sound.play();
 });
 
 drum11.addEventListener("click", () => {
-  hiHatSound.play();
+  snare3Sound.play();
 });
 
 drum12.addEventListener("click", () => {
-  hiHatSound.play();
+  tom5Sound.play();
 });
 
 drum13.addEventListener("click", () => {
