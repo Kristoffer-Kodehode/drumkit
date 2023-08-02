@@ -1,0 +1,131 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#drums {
+  background-image: url(img/FOLK-Drum-Kits.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  gap: 20px;
+  margin-left: 7%;
+}
+
+kbd {
+  border: 2px solid #121212;
+  border-radius: 5px;
+  box-shadow: #0e0e0e7e -3px 1px;
+  padding: 6px;
+  background-color: #dfdfdf;
+  user-select: none;
+}
+.btn {
+  cursor: crosshair;
+}
+
+#sound-btn1 {
+  position: absolute;
+  top: 50px;
+  left: 230px;
+}
+
+#sound-btn2 {
+  position: absolute;
+  top: 65px;
+  left: 430px;
+}
+
+#sound-btn3 {
+  position: absolute;
+  top: 150px;
+  left: 500px;
+}
+
+#sound-btn4 {
+  position: absolute;
+  top: 150px;
+  left: 600px;
+}
+
+#sound-btn5 {
+  position: absolute;
+  top: 60px;
+  left: 666px;
+}
+
+#sound-btn6 {
+  position: absolute;
+  top: 65px;
+  left: 870px;
+}
+
+#sound-btn7 {
+  position: absolute;
+  top: 335px;
+  left: 190px;
+}
+
+#sound-btn8 {
+  position: absolute;
+  top: 350px;
+  left: 266px;
+}
+
+#sound-btn9 {
+  position: absolute;
+  top: 350px;
+  left: 366px;
+}
+
+#sound-btn10 {
+  position: absolute;
+  top: 370px;
+  left: 520px;
+}
+
+#sound-btn11 {
+  position: absolute;
+  top: 370px;
+  left: 666px;
+}
+
+#sound-btn12 {
+  position: absolute;
+  top: 330px;
+  left: 1030px;
+}
+
+#sound-btn13 {
+  position: absolute;
+  top: 633px;
+  left: 140px;
+}
+
+#sound-btn14 {
+  position: absolute;
+  top: 666px;
+  left: 415px;
+}
+
+#sound-btn15 {
+  position: absolute;
+  top: 666px;
+  left: 750px;
+}
+
+#sound-btn16 {
+  position: absolute;
+  top: 633px;
+  left: 1001px;
+}
+
+#ヤバい {
+  width: 5px;
+  height: 5px;
+  cursor: help;
+  background-color: black;
+}
