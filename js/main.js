@@ -50,12 +50,12 @@ window.addEventListener("keydown", (e) => {
       hiHatSound.play();
       break;
     }
-    case "R": {
+    /*case "R": {
       const openHatSound = new Audio(soundArray[2]);
       openHatSound.volume = 0.4;
       openHatSound.play();
       break;
-    }
+    }*/
     case "t": {
       const tomSound = new Audio(soundArray[3]);
       tomSound.volume = 0.4;
@@ -74,12 +74,12 @@ window.addEventListener("keydown", (e) => {
       hiHat2Sound.play();
       break;
     }
-    case "U": {
+    /*case "U": {
       const openHat2Sound = new Audio(soundArray[6]);
       openHat2Sound.volume = 0.4;
       openHat2Sound.play();
       break;
-    }
+    }*/
     case "i": {
       const ride2Sound = new Audio(soundArray[7]);
       ride2Sound.volume = 0.4;
@@ -167,11 +167,11 @@ hiHat.addEventListener("click", () => {
   hiHatSound.play();
 });
 
-hiHat.addEventListener("dblclick", () => {
+/*hiHat.addEventListener("dblclick", () => {
   const openHatSound = new Audio(soundArray[2]);
   openHatSound.volume = 0.4;
   openHatSound.play();
-});
+});*/
 
 tom.addEventListener("click", () => {
   const tomSound = new Audio(soundArray[3]);
@@ -191,11 +191,11 @@ hiHat2.addEventListener("click", () => {
   hiHat2Sound.play();
 });
 
-hiHat2.addEventListener("dblclick", () => {
+/*hiHat2.addEventListener("dblclick", () => {
   const openHat2Sound = new Audio(soundArray[6]);
   openHat2Sound.volume = 0.4;
   openHat2Sound.play();
-});
+});*/
 
 ride2.addEventListener("click", () => {
   const ride2Sound = new Audio(soundArray[7]);
