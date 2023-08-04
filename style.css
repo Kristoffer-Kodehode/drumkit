@@ -17,7 +17,7 @@ kbd {
   border-radius: 5px;
   box-shadow: #858484e3 -5px 3px 1px 8px;
   padding: 10px 13px;
-  background: linear-gradient(0.25turn, #cecece, #f3f3f3, #cecece);;
+  background: linear-gradient(0.25turn, #cecece, #f3f3f3, #cecece);
   user-select: none;
 }
 
