@@ -1,6 +1,6 @@
 const ride = document.querySelector("#ride");
 const hiHat = document.querySelector("#hi-hat");
-const tom = document.querySelector("#tom1");
+const tom = document.querySelector("#tom");
 const tom2 = document.querySelector("#tom2");
 const hiHat2 = document.querySelector("#hi-hat2");
 const ride2 = document.querySelector("#ride2");
