@@ -167,7 +167,7 @@ hiHat.addEventListener("click", () => {
   hiHatSound.play();
 });
 
-hiHat.addEventListener("dblclick", () => {
+hiHat.addEventListener("wheel", () => {
   const openHatSound = new Audio(soundArray[2]);
   openHatSound.volume = 0.4;
   openHatSound.play();
@@ -191,7 +191,7 @@ hiHat2.addEventListener("click", () => {
   hiHat2Sound.play();
 });
 
-hiHat2.addEventListener("dblclick", () => {
+hiHat2.addEventListener("wheel", () => {
   const openHat2Sound = new Audio(soundArray[6]);
   openHat2Sound.volume = 0.4;
   openHat2Sound.play();
