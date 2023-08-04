@@ -1,196 +1,264 @@
-const drum1 = document.querySelector("#sound-btn1");
-const drum2 = document.querySelector("#sound-btn2");
-const drum3 = document.querySelector("#sound-btn3");
-const drum4 = document.querySelector("#sound-btn4");
-const drum5 = document.querySelector("#sound-btn5");
-const drum6 = document.querySelector("#sound-btn6");
-const drum7 = document.querySelector("#sound-btn7");
-const drum8 = document.querySelector("#sound-btn8");
-const drum9 = document.querySelector("#sound-btn9");
-const drum10 = document.querySelector("#sound-btn10");
-const drum11 = document.querySelector("#sound-btn11");
-const drum12 = document.querySelector("#sound-btn12");
-const drum13 = document.querySelector("#sound-btn13");
-const drum14 = document.querySelector("#sound-btn14");
-const drum15 = document.querySelector("#sound-btn15");
-const drum16 = document.querySelector("#sound-btn16");
+const ride = document.querySelector("#ride");
+const hiHat = document.querySelector("#hi-hat");
+const tom = document.querySelector("#tom1");
+const tom2 = document.querySelector("#tom2");
+const hiHat2 = document.querySelector("#hi-hat2");
+const ride2 = document.querySelector("#ride2");
+const tom3 = document.querySelector("#tom3");
+const tom4 = document.querySelector("#tom4");
+const snare = document.querySelector("#snare");
+const snare2 = document.querySelector("#snare2");
+const snare3 = document.querySelector("#snare3");
+const tom5 = document.querySelector("#tom5");
+const kick = document.querySelector("#kick");
+const kick2 = document.querySelector("#kick2");
+const kick3 = document.querySelector("#kick3");
+const kick4 = document.querySelector("#kick4");
 
-const clapSound = new Audio("sound/clap.wav");
-const hiHatSound = new Audio("sound/hiHat.wav");
-const hiHat2Sound = new Audio("sound/hiHat2.wav");
-const kickSound = new Audio("sound/kick.wav");
-const kick2Sound = new Audio("sound/kick2.wav");
-const kick3Sound = new Audio("sound/kick3.wav");
-const kick4Sound = new Audio("sound/kick4.wav");
-const openHatSound = new Audio("sound/openHat.wav");
-const openHat2Sound = new Audio("sound/openHat2.wav");
-const rideSound = new Audio("sound/ride.wav");
-const ride2Sound = new Audio("sound/ride2.wav");
-const snareSound = new Audio("sound/snare.wav");
-const snare2Sound = new Audio("sound/snare2.wav");
-const snare3Sound = new Audio("sound/snare3.wav");
-const tomSound = new Audio("sound/tom.wav");
-const tom2Sound = new Audio("sound/tom2.wav");
-const tom3Sound = new Audio("sound/tom3.wav");
-const tom4Sound = new Audio("sound/tom4.wav");
-const tom5Sound = new Audio("sound/tom5.wav");
-const testSound = new Audio("sound/test.wav");
+const soundArray = [
+  "sound/ride.wav",
+  "sound/hiHat.wav",
+  "sound/openHat.wav",
+  "sound/tom.wav",
+  "sound/tom2.wav",
+  "sound/hiHat2.wav",
+  "sound/openHat2.wav",
+  "sound/ride2.wav",
+  "sound/tom3.wav",
+  "sound/tom4.wav",
+  "sound/snare.wav",
+  "sound/snare2.wav",
+  "sound/snare3.wav",
+  "sound/tom5.wav",
+  "sound/kick.wav",
+  "sound/kick2.wav",
+  "sound/kick3.wav",
+  "sound/kick4.wav",
+];
 
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
     case "e": {
+      const rideSound = new Audio(soundArray[0]);
+      rideSound.volume = 0.4;
       rideSound.play();
       break;
     }
     case "r": {
+      const hiHatSound = new Audio(soundArray[1]);
+      hiHatSound.volume = 0.4;
       hiHatSound.play();
       break;
     }
     case "R": {
+      const openHatSound = new Audio(soundArray[2]);
+      openHatSound.volume = 0.4;
       openHatSound.play();
       break;
     }
     case "t": {
+      const tomSound = new Audio(soundArray[3]);
+      tomSound.volume = 0.4;
       tomSound.play();
       break;
     }
     case "y": {
+      const tom2Sound = new Audio(soundArray[4]);
+      tom2Sound.volume = 0.4;
       tom2Sound.play();
       break;
     }
     case "u": {
+      const hiHat2Sound = new Audio(soundArray[5]);
+      hiHat2Sound.volume = 0.4;
       hiHat2Sound.play();
       break;
     }
     case "U": {
+      const openHat2Sound = new Audio(soundArray[6]);
+      openHat2Sound.volume = 0.4;
       openHat2Sound.play();
       break;
     }
     case "i": {
+      const ride2Sound = new Audio(soundArray[7]);
+      ride2Sound.volume = 0.4;
       ride2Sound.play();
       break;
     }
     case "d": {
+      const tom3Sound = new Audio(soundArray[8]);
+      tom3Sound.volume = 0.4;
       tom3Sound.play();
       break;
     }
     case "f": {
+      const tom4Sound = new Audio(soundArray[9]);
+      tom4Sound.volume = 0.4;
       tom4Sound.play();
       break;
     }
     case "g": {
+      const snareSound = new Audio(soundArray[10]);
+      snareSound.volume = 0.4;
       snareSound.play();
       break;
     }
     case "h": {
+      const snare2Sound = new Audio(soundArray[11]);
+      snare2Sound.volume = 0.4;
       snare2Sound.play();
       break;
     }
     case "j": {
+      const snare3Sound = new Audio(soundArray[12]);
+      snare3Sound.volume = 0.4;
       snare3Sound.play();
       break;
     }
     case "k": {
+      const tom5Sound = new Audio(soundArray[13]);
+      tom5Sound.volume = 0.4;
       tom5Sound.play();
       break;
     }
     case "c": {
+      const kickSound = new Audio(soundArray[14]);
+      kickSound.volume = 0.4;
       kickSound.play();
       break;
     }
     case "v": {
+      const kick2Sound = new Audio(soundArray[15]);
+      kick2Sound.volume = 0.4;
       kick2Sound.play();
       break;
     }
     case "b": {
+      const kick3Sound = new Audio(soundArray[16]);
+      kick3Sound.volume = 0.4;
       kick3Sound.play();
       break;
     }
     case "n": {
+      const kick4Sound = new Audio(soundArray[17]);
+      kick4Sound.volume = 0.4;
       kick4Sound.play();
       break;
     }
     case "Shift": {
       break;
     }
-    case "Dead": {
-      testSound.play();
-      break;
-    }
     default: {
-      clapSound.play();
+      break;
     }
   }
 });
 
-drum1.addEventListener("click", () => {
+ride.addEventListener("click", () => {
+  const rideSound = new Audio(soundArray[0]);
+  rideSound.volume = 0.4;
   rideSound.play();
 });
 
-drum2.addEventListener("click", () => {
+hiHat.addEventListener("click", () => {
+  const hiHatSound = new Audio(soundArray[1]);
+  hiHatSound.volume = 0.4;
   hiHatSound.play();
 });
 
-drum2.addEventListener("dblclick", () => {
+hiHat.addEventListener("dblclick", () => {
+  const openHatSound = new Audio(soundArray[2]);
+  openHatSound.volume = 0.4;
   openHatSound.play();
 });
 
-drum3.addEventListener("click", () => {
+tom.addEventListener("click", () => {
+  const tomSound = new Audio(soundArray[3]);
+  tomSound.volume = 0.4;
   tomSound.play();
 });
 
-drum4.addEventListener("click", () => {
+tom2.addEventListener("click", () => {
+  const tom2Sound = new Audio(soundArray[4]);
+  tom2Sound.volume = 0.4;
   tom2Sound.play();
 });
 
-drum5.addEventListener("click", () => {
+hiHat2.addEventListener("click", () => {
+  const hiHat2Sound = new Audio(soundArray[5]);
+  hiHat2Sound.volume = 0.4;
   hiHat2Sound.play();
 });
 
-drum5.addEventListener("dblclick", () => {
+hiHat2.addEventListener("dblclick", () => {
+  const openHat2Sound = new Audio(soundArray[6]);
+  openHat2Sound.volume = 0.4;
   openHat2Sound.play();
 });
 
-drum6.addEventListener("click", () => {
+ride2.addEventListener("click", () => {
+  const ride2Sound = new Audio(soundArray[7]);
+  ride2Sound.volume = 0.4;
   ride2Sound.play();
 });
 
-drum7.addEventListener("click", () => {
+tom3.addEventListener("click", () => {
+  const tom3Sound = new Audio(soundArray[8]);
+  tom3Sound.volume = 0.4;
   tom3Sound.play();
 });
 
-drum8.addEventListener("click", () => {
+tom4.addEventListener("click", () => {
+  const tom4Sound = new Audio(soundArray[9]);
+  tom4Sound.volume = 0.4;
   tom4Sound.play();
 });
 
-drum9.addEventListener("click", () => {
+snare.addEventListener("click", () => {
+  const snareSound = new Audio(soundArray[10]);
+  snareSound.volume = 0.4;
   snareSound.play();
 });
 
-drum10.addEventListener("click", () => {
+snare2.addEventListener("click", () => {
+  const snare2Sound = new Audio(soundArray[11]);
+  snare2Sound.volume = 0.4;
   snare2Sound.play();
 });
 
-drum11.addEventListener("click", () => {
+snare3.addEventListener("click", () => {
+  const snare3Sound = new Audio(soundArray[12]);
+  snare3Sound.volume = 0.4;
   snare3Sound.play();
 });
 
-drum12.addEventListener("click", () => {
+tom5.addEventListener("click", () => {
+  const tom5Sound = new Audio(soundArray[13]);
+  tom5Sound.volume = 0.4;
   tom5Sound.play();
 });
 
-drum13.addEventListener("click", () => {
+kick.addEventListener("click", () => {
+  const kickSound = new Audio(soundArray[14]);
+  kickSound.volume = 0.4;
   kickSound.play();
 });
 
-drum14.addEventListener("click", () => {
+kick2.addEventListener("click", () => {
+  const kick2Sound = new Audio(soundArray[15]);
+  kick2Sound.volume = 0.4;
   kick2Sound.play();
 });
 
-drum15.addEventListener("click", () => {
+kick3.addEventListener("click", () => {
+  const kick3Sound = new Audio(soundArray[16]);
+  kick3Sound.volume = 0.4;
   kick3Sound.play();
 });
 
-drum16.addEventListener("click", () => {
+kick4.addEventListener("click", () => {
+  const kick4Sound = new Audio(soundArray[17]);
+  kick4Sound.volume = 0.4;
   kick4Sound.play();
 });
