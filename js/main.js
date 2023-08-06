@@ -17,12 +17,12 @@ const kick4 = document.querySelector("#kick4");
 
 const soundArray = [
   "sound/ride.wav",
-  "sound/hiHat.wav",
-  "sound/openHat.wav",
+  "sound/hihat.wav",
+  "sound/openhat.wav",
   "sound/tom.wav",
   "sound/tom2.wav",
-  ".sound/hiHat2.wav",
-  ".sound/openHat2.wav",
+  "sound/hihat2.wav",
+  "sound/openhat2.wav",
   "sound/ride2.wav",
   "sound/tom3.wav",
   "sound/tom4.wav",
