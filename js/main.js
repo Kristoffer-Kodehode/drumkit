@@ -42,7 +42,7 @@ window.addEventListener("keydown", (e) => {
   //switch case for keydowns matching the keys chosen for the buttons
   switch (e.key) {
     case "e": {
-      /*make the sound element from index in the array, set volume a bit lower and play it,
+      /*make the sound element from index in the array, set volume a bit lower and play it.
      somehow this method gets around a limit of one sound being played at a time*/
       const rideSound = new Audio(soundArray[0]);
       rideSound.volume = 0.4;
@@ -154,9 +154,11 @@ window.addEventListener("keydown", (e) => {
       break;
     }
     case "Shift": {
+      //because we need shift for uppercase, making sure it won't do anything
       break;
     }
     default: {
+      //making sure anything else won't do anything either
       break;
     }
   }
