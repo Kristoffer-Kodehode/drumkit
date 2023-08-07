@@ -56,6 +56,8 @@ window.addEventListener("keydown", (e) => {
       break;
     }
     case "R": {
+      /*keydown events distinguish between upper- and lowercase, 
+      so we can use that for the open hi hats*/
       const openHatSound = new Audio(soundArray[2]);
       openHatSound.volume = 0.4;
       openHatSound.play();
@@ -80,8 +82,6 @@ window.addEventListener("keydown", (e) => {
       break;
     }
     case "U": {
-      /*keydown events distinguish between upper- and lowercase, 
-      so we can use that for the open hi hats*/
       const openHat2Sound = new Audio(soundArray[6]);
       openHat2Sound.volume = 0.4;
       openHat2Sound.play();
