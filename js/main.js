@@ -14,7 +14,9 @@ const kick = document.querySelector("#kick");
 const kick2 = document.querySelector("#kick2");
 const kick3 = document.querySelector("#kick3");
 const kick4 = document.querySelector("#kick4");
+//connect all the buttons
 
+//sources for the sounds
 const soundArray = [
   "sound/ride.wav",
   "sound/hihat.wav",
@@ -37,8 +39,11 @@ const soundArray = [
 ];
 
 window.addEventListener("keydown", (e) => {
+  //switch case for keydowns matching the keys chosen for the buttons
   switch (e.key) {
     case "e": {
+      /*make the sound element from index in the array, set volume a bit lower and play it,
+     somehow this method gets around a limit of one sound being played at a time*/
       const rideSound = new Audio(soundArray[0]);
       rideSound.volume = 0.4;
       rideSound.play();
@@ -75,6 +80,8 @@ window.addEventListener("keydown", (e) => {
       break;
     }
     case "U": {
+      /*keydown events distinguish between upper- and lowercase, 
+      so we can use that for the open hi hats*/
       const openHat2Sound = new Audio(soundArray[6]);
       openHat2Sound.volume = 0.4;
       openHat2Sound.play();
@@ -155,6 +162,7 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+//click events and an alternative for the open hi hat sounds, dblclick felt less than ideal
 ride.addEventListener("click", () => {
   const rideSound = new Audio(soundArray[0]);
   rideSound.volume = 0.4;
